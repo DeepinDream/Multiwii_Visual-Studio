@@ -521,8 +521,8 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
          available for ITG3050, ITG3200, MPU3050, MPU6050*/
       //#define GYRO_LPF_256HZ     // This is the default setting, no need to uncomment, just for reference
       //#define GYRO_LPF_188HZ
-      #define GYRO_LPF_98HZ
-      //#define GYRO_LPF_42HZ
+      //#define GYRO_LPF_98HZ
+      #define GYRO_LPF_42HZ
       //#define GYRO_LPF_20HZ
       //#define GYRO_LPF_10HZ
       //#define GYRO_LPF_5HZ       // Use this only in extreme cases, rather change motors and/or props -- setting not available on ITG3200
@@ -1050,7 +1050,7 @@ Also note, that maqgnetic declination changes with time, so recheck your value e
   /**************************************************************************************/
     /* motors will not spin when the throttle command is in low position
        this is an alternative method to stop immediately the motors */
-    //#define MOTOR_STOP
+    #define MOTOR_STOP
 
     /* some radios have not a neutral point centered on 1500. can be changed here */
     #define MIDRC 1500
